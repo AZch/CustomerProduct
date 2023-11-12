@@ -1,0 +1,10 @@
+version: '2'
+services:
+
+  postgresql:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+    ports:
+      - "25432:5432"

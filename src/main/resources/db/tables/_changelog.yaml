@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: init
+      author: antonzhuikov@gmail.com
+      changes:
+        - sqlFile:
+            endDelimiter: \n-
+            splitStatements: true
+            path: db/tables/2023-11-12-20-57-init-structure.sql
+            stripComments: true
